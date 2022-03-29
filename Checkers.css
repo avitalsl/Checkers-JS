@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  background: #e8e4e4;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#header {
+  display: block;
+  font-size: 35px;
+  font-weight: 600;
+  color: rgb(56 25 25);
+  width: 100%;
+  text-align: center;
+  margin: 4% auto 3%;
+}
+
+.board-container {
+  width: 430px;
+  height: 400px;
+  margin: 30px auto 10px;
+  outline: 5px solid rgb(70 51 51);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grey {
+  background: rgb(83, 82, 82);
+}
+
+.white {
+  background: #ece9e9;
+}
+
+.black {
+  background: black;
+}
+
+.piece {
+  height: 60%;
+  width: 60%;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 20% auto;
+  display: block;
+}
+
+/* .white-piece {
+  height: 60%;
+  width: 60%;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 20% auto;
+  display: block;
+  background: #ece9e9;
+}
+
+.black-piece {
+  height: 60%;
+  width: 60%;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 20% auto;
+  display: block;
+  background: black;
+} */
+
+.piece.black:hover {
+  height: 60%;
+  width: 60%;
+  background: rgb(111 77 77);
+  border: 4px solid rgb(53, 36, 36);
+  border-radius: 50%;
+  margin: 20% auto;
+}
+
+.piece.white:hover {
+  height: 60%;
+  width: 60%;
+  background: rgb(111 77 77);
+  border: 3px solid rgb(238, 215, 215);
+  border-radius: 50%;
+  margin: 20% auto;
+}
+
+.focus-white {
+  background: rgb(111 77 77);
+  border: 3px solid rgb(238, 215, 215);
+}
+
+.focus-black {
+  background: rgb(111 77 77);
+  border: 4px solid rgb(53, 36, 36);
+}
+
+.none {
+  display: none;
+  background-color: transparent;
+}
+
+.burn.none {
+  display: none;
+  transition: background-color 1s;
+  background-color: transparent;
+}
+
+#game-status-board.burn {
+  color: #f73718;
+  font-size: 20px;
+}
+
+#game-status-board {
+  width: 440px;
+  height: 50px;
+  margin: 0 auto;
+  outline: 2px solid rgb(75, 72, 72);
+  box-shadow: inset 0px 0px 0px 5px rgb(81 59 59);
+  text-align: center;
+  vertical-align: auto;
+  color: rgb(56 25 25);
+  font-weight: 600;
+}
+
+.king {
+  height: 60%;
+  width: 60%;
+  border: 3px solid rgb(255, 215, 0);
+  border-radius: 50%;
+  margin: 20% auto;
+}
+
+.focus-king-white {
+  height: 60%;
+  width: 60%;
+  background: rgb(214, 209, 177);
+  border: 3px solid rgb(255, 215, 0);
+}
+
+.focus-king-black {
+  height: 60%;
+  width: 60%;
+  background: rgb(105, 99, 58);
+  border: 3px solid rgb(255, 215, 0);
+}
+
+.piece.white.king:hover {
+  background: rgb(214, 209, 177);
+  border: 3px solid rgb(255, 215, 0);
+}
+
+.piece.black.king:hover {
+  background: rgb(105, 99, 58);
+  border: 3px solid rgb(255, 215, 0);
+}
+
+.winning {
+  color: rgb(197 21 21);
+}
